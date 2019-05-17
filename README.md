@@ -1,6 +1,6 @@
 # WordPress Update Assistant Manager with wp-cli
 
-Script for updating all the WordPress Websites hosted with one command and wp-cli tools.
+Script for updating WordPress Websites hosted with one command and wp-cli tools.
 
 ## Installation
 
