@@ -8,7 +8,7 @@ Just downloading the file zip on your computer wherever you want. For example, a
 
 ## Prerequisites 
 
-You will need having wp-cli on your computer for using this script. 
+You need wp-cli on your computer for using this script. 
 For the wp-cli installation and prerequisites follow this link https://wp-cli.org/#installation
 
 * UNIX-like environment (OS X, Linux, FreeBSD, Cygwin); limited support in Windows environment
