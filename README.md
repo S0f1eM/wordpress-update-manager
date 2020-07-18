@@ -1,4 +1,8 @@
-# WordPress Update Assistant Manager
+
+
+
+# WordPress Update (｡◕‿◕｡) Assistant Manager   
+
 
 ### Table Of Contents
 * [Introduction](#intro)
