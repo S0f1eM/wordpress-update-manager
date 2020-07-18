@@ -6,6 +6,7 @@
 * [Installation](#setup)
 * [Usage](#usage)
 * [Features](#features)
+* [Links](#links)
 
 ## Introduction<a name="intro"></a>
 
@@ -30,7 +31,11 @@ The script must be at the root folder of your wordpress websites.
 ## Usage<a name="usage"></a>
 
 Go to the directory where are your WordPress websites folder in which you want to use the script. 
-Change and replace all the variables and default path in the file according to your needs before running the following command.
+You will need also 2 .txt files : 
+* 1 for listing websites path you want to update.
+* 1 .txt for the major plugins names you want to desactivate before at the beginning of the process, before the update. They will be reactivate at the end.
+
+Before running the script with the following command you need to change and replace all the variables and default path in the file according to your needs.  
 
 ```bash
 bash path/to/the/script/file/wordpress-update-manager.sh 
@@ -51,3 +56,8 @@ The script will make the following actions :
 * Search for plugins updates and updating if found. (this part can also be set in comments for security choices).
 * Search for template update and update if found.
 * Update the core database.
+
+## Links<a name="links"></a>
+
+* *[WP-CLI](https://wp-cli.org/fr/)*
+
