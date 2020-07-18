@@ -1,40 +1,53 @@
-# WordPress Update Assistant Manager with wp-cli
+# WordPress Update Assistant Manager
 
-Script for updating WordPress Websites hosted with one command and wp-cli tools.
+### Table Of Contents
+* [Introduction](#intro)
+* [System requirements](#prerequisites)
+* [Installation](#setup)
+* [Usage](#usage)
+* [Features](#features)
 
-## Installation
+## Introduction<a name="intro"></a>
 
-Just downloading the file zip on your computer wherever you want. For example, at the root folder of your wordpress websites.
+This script was made for updating several WordPress websites hosted on internal servers.
+I used Bash and wp-cli tools.
 
-## Prerequisites 
+## System requirements<a name="prerequisites"></a>
 
 You need wp-cli on your computer for using this script. 
 For the wp-cli installation and prerequisites follow this link https://wp-cli.org/#installation
 
 * UNIX-like environment (OS X, Linux, FreeBSD, Cygwin); limited support in Windows environment
 * PHP 5.4 or later
-* ordPress 3.7 or later. Versions older than the latest WordPress release may have degraded functionality
+* WordPress 3.7 or later. Versions older than the latest WordPress release may have degraded functionality.
 
-## Usage
 
-Don't forget to change and replace all the variables and default path on the file before running the following command.
+## Installation<a name="setup"></a>
+
+Just downloading the file zip on your computer wherever you want. 
+The script must be at the root folder of your wordpress websites.
+
+## Usage<a name="usage"></a>
+
+Go to the directory where are your WordPress websites folder in which you want to use the script. 
+Change and replace all the variables and default path in the file according to your needs before running the following command.
 
 ```bash
 bash path/to/the/script/file/wordpress-update-manager.sh 
 ```
 
-## Script workflow
+## Features<a name="features"></a>
 
 The script will make the following actions : 
 	
-* Check the wp-cli version
-* Update wp-cli if necessary
-* Desactivate plugins you list on the file .txt you choose to call
-* Verifies file integrity by comparing to published checksums
-* Export database for save (see db export in wp-cli documentation for more details about where you want to save it)
-* Verifies the wordpress updates
-* Update wordpress version for each websites on your personnal list.txt
-* Activate plugins 
-* Search for plugins updates and updating if some found
-* Search for template update and update if some found
-* Update core database
+* Check the wp-cli version.
+* Update wp-cli if necessary.
+* Desactivate plugins you list on the file .txt you choose to parse in the script.
+* Verifies file integrity by comparing to published checksums.
+* Export database for save (see db export in wp-cli documentation for more details about where you want to save it).
+* Verifies the wordpress updates.
+* Update wordpress version for each url websites on your list.txt.
+* Reactivate plugins.
+* Search for plugins updates and updating if found. (this part can also be set in comments for security choices).
+* Search for template update and update if found.
+* Update the core database.
